@@ -1,3 +1,4 @@
+#冒泡排序
 def bubble_sort(l):
     assert(type(l) == type(['']))
     length = len(l)
