@@ -1,27 +1,20 @@
-def x(n,target):
-    def sortnum(n):
-        n = [n]
-        n = n.sort()
-        return n
-    left = 0
-    right = len(n) - 1
-    while left < right:
-        sum_number = sortnum(left) + sortnum(right)
-        if sum_number == target:
-            break
-        elif sum_number > target:
-            right -= 1
-        elif sum_number < target:
-            left += 1
-    if left == right:
-        return -1, -1
-    else:
-        pos1 = n.index(sortnum[left]) + 1
-        pos2 = n.index(sortnum[right]) + 1
-        if pos1 == pos2:
-            pos2 = n[pos1:].index(sortnum[right]) + pos1 + 1
-        return min(pos1, pos2), max(pos1, pos2)
-
-a = raw_input()
+a = input('please input a list:')
 b = int(input('target:'))
-print x(a,b)
+c = sorted(a)
+left = 0
+right =len(a) - 1
+while left < right:
+    sum_number = c[left] + c[right]
+    if sum_number == b:
+        break
+    elif sum_number > b:
+        right -= 1
+    elif sum_number < b:
+        left += 1
+if left == right :
+    print 'wrong'
+else:
+    p1 = a.index(c[left])
+    p2 = a.index(c[right])
+print [p1,p2]
+
