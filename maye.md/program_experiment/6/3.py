@@ -13,7 +13,6 @@ def need(n,x):
     else:
         return 'sorry,please input the right number.'
 
-
 def square_area(x):
     a = x*x
     return a
@@ -25,6 +24,7 @@ def circle_area(x):
 def regular_triangle_area(x):
     a = round(math.sqrt(3)*x*x/4,2)
     return a
+
 
 x = int(input('please input a number:'))
 n = int(input('square area:0\ncircle area:1\nregular triangle area:2\n'))
