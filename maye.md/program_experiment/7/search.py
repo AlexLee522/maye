@@ -1,3 +1,4 @@
+#python3.6
 import codecs
 name = input('请输入文件名：')
 from_file = codecs.open(name,encoding='utf-8').read()
