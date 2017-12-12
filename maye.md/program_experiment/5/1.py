@@ -5,7 +5,7 @@ def average(x):
 
 i = 1
 x = []
-while i < 4:
+while i < 6:
     s = []
     name = raw_input('input student\'s name:')
     n = raw_input('input student\'s score:')
